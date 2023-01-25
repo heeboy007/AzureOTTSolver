@@ -15,9 +15,7 @@ using rails minitest
 NONE yet.
 
 * TODO
-1. install turbo correctly
-2. make more tests
-3. install bootstrap to look things good
-4. gather more ideas about this project
-5. postgresql?
-Z. rake version error correction(currently out of ideas)
+1. make more tests
+2. install bootstrap to look things good
+3. gather more ideas about this project
+4. postgresql?

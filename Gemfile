@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# For good aesthetics
+gem "bootstrap-sass"
+
 # Use Rake to perfoem db:migrate and assets:precompile... etc.
 gem "rake", "~> 13.0", git: 'https://github.com/ruby/rake'
 
