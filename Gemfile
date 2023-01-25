@@ -46,7 +46,7 @@ gem "bootsnap", require: false
 gem "sassc-rails"
 
 # Use Rake to perfoem db:migrate and assets:precompile... etc.
-gem "rake", "~> 12.2"
+gem "rake", "~> 13.0", git: 'https://github.com/ruby/rake'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

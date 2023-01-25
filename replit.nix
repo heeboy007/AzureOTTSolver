@@ -9,8 +9,6 @@ in {
     pkgs.libffi
     pkgs.nodejs-16_x
     pkgs.ruby
-    pkgs.rubyPackages.ffi
-    pkgs.rubyPackages.ffi-compiler
     pkgs.sqlite
     pkgs.yarn
   ];
