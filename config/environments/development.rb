@@ -60,7 +60,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # Add Replit Host names
-  config.hosts << /[a-z0-9\-]+\.id\.repl\.co/
+  config.hosts << /[a-z0-9\-]+\.[a-z0-9\-]+\.repl\.co/
   
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

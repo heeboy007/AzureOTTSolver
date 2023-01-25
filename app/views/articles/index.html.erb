@@ -1,1 +1,20 @@
-<h1>Hello 7.0.4!</h1>
+<%= link_to "글쓰기", new_article_path %>
+
+<table>
+  <caption>블로그</caption>
+  <thead>
+    <tr>
+      <th>글번호</th>
+      <th>글제목</th>
+      <th>링크</th>
+    </tr>
+  </thead>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.id %></td>
+      <td><%= article.title %></td>
+      <td><%= link_to "클릭!", article %></td>
+    </tr>
+  <% end %>
+</table>
+
