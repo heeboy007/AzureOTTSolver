@@ -3,7 +3,7 @@
 <%= form_with model: @article do |form| %>
   <div>
     <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field(:title,class: 'form-control input-lg') %>
     <% @article.errors[:title].each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -11,15 +11,15 @@
 
   <div>
     <%= form.label :body %><br>
-    <%= form.text_area :body %>
+    <%= form.text_area(:body, class: 'form-control') %>
     <% @article.errors[:body].each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit(class: 'btn btn-primary') %>
   </div>
 <% end %>
 
-<%= link_to "돌아가기", articles_path %>
+<%= link_to "돌아가기", articles_path, :class => 'btn btn-warning' %>

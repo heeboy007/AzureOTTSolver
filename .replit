@@ -1,6 +1,8 @@
 run = "bundle exec rails server --binding=0.0.0.0"
 entrypoint = "app/controllers/application_controller.rb"
 
+onBoot = "bundle install"
+
 hidden = [".bundle"]
 
 [packager]

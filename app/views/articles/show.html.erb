@@ -3,10 +3,10 @@
 <p><%= @article.body %></p>
 
 <ul>
-  <li><%= link_to "삭제", article_path(@article), data: { 
+  <li><%= link_to "삭제", article_path(@article), :class => 'btn btn-danger', data: { 
         turbo_method: :delete, 
         turbo_confirm: "정말 지우시겠습니까?"
       } %></li>
-  <li><%= link_to "수정", edit_article_path(@article) %></li>
-  <li><%= link_to "돌아가기", articles_path %></li>
+  <li><%= link_to "수정", edit_article_path(@article), :class => 'btn btn-default' %></li>
+  <li><%= link_to "돌아가기", articles_path, :class => 'btn btn-default' %></li>
 </ul>

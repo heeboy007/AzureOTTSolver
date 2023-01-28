@@ -1,20 +1,13 @@
-<%= link_to "글쓰기", new_article_path %>
+<%= link_to "글쓰기", new_article_path, :class => 'btn btn-default', :id => 'article_write_button' %>
 
-<table>
-  <caption>블로그</caption>
-  <thead>
-    <tr>
-      <th>글번호</th>
-      <th>글제목</th>
-      <th>링크</th>
-    </tr>
-  </thead>
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.id %></td>
-      <td><%= article.title %></td>
-      <td><%= link_to "클릭!", article %></td>
-    </tr>
+      <div class="container article_container">
+        <a href="<%= article_path(article) %>">
+          <h2><%= article.title %></h2>
+          <p><%= article.body.length > 300 ? article.body[0..300] + " . . ." : article.body %></p>
+        </a>
+      </div>
+    <hr>
   <% end %>
-</table>
-
+</div>

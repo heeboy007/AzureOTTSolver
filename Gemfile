@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+#git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.3"
 
@@ -48,8 +48,12 @@ gem "sassc-rails"
 # For good aesthetics
 gem "bootstrap-sass"
 
+# JQuery For bootstrap
+gem 'jquery-rails'
+
 # Use Rake to perfoem db:migrate and assets:precompile... etc.
-gem "rake", "~> 13.0", git: 'https://github.com/ruby/rake'
+gem "rake", "~> 13.0"
+#gem "rake", "~> 13.0", git: 'https://github.com/ruby/rake'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

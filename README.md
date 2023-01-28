@@ -6,16 +6,15 @@
 
 * System dependencies
 ruby / rails
-look up replit.nix to get dependency information 
+look up replit.nix & gemfile to get dependency information 
 
 * How to run the test suite
-using rails minitest
+using rails-rspec.
 
 * Services (job queues, cache servers, search engines, etc.)
 NONE yet.
 
 * TODO
 1. make more tests
-2. install bootstrap to look things good
-3. gather more ideas about this project
-4. postgresql?
+2. gather more ideas about this project
+3. postgresql?
